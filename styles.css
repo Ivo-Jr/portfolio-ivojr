@@ -185,7 +185,7 @@ body {
   .navbar ul li {
     margin: 1rem;
   }
-  
+
   .navbar ul li a {
     font-size: calc(1vw + .3rem);
   }
@@ -273,9 +273,9 @@ body {
 .stacks-content {
   display: flex;
   justify-content: center;
-
   flex-direction: column;
-  margin-top: 6rem;
+
+  margin: 5rem 0rem 2rem;
   padding: 0px 20px;
 }
 
@@ -604,7 +604,7 @@ body {
   padding: calc(0.2vw + 0.8rem) calc(2vw + 0.8rem);
   margin-bottom: 3rem;
 
-  
+
   font-size: calc(.7vw + .55rem);
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -984,7 +984,7 @@ body {
   .contact-icon-content h2 {
     font-size: calc(1.4vw + 1.8rem);
   }
-  
+
   .contact-icon {
     width: 3vw;
     height: 3vw;
@@ -1033,15 +1033,15 @@ body {
 }
 
 @media only screen and (min-width: 1840px) {
-  .container-footer h2{
+  .container-footer h2 {
     font-size: calc(1vw + .2rem);
   }
 
-  .container-footer h3{
+  .container-footer h3 {
     font-size: .8vw;
   }
 }
-  
+
 @keyframes written_text {
   100% {
     color: var(--color-white);
