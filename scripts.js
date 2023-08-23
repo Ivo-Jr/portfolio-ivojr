@@ -7,7 +7,7 @@ let header = document.getElementById('header');
 
 function createSwiper(container, pagination, nextButton, prevButton) {
   return new Swiper(container, {
-    slidesPerView: handleWitdh(),
+    slidesPerView: handleWidth(),
     spaceBetween: 30,
     pagination: {
       el: pagination,
@@ -17,22 +17,22 @@ function createSwiper(container, pagination, nextButton, prevButton) {
       nextEl: nextButton,
       prevEl: prevButton,
     },
-  })
+  });
 }
 
-function handleWitdh() {
+function handleWidth() {
   let getWidth = window.innerWidth || document.documentElement.clientWidth;
-  let slidesShow = 3;
+  let slideShow = 3;
 
   if (getWidth < 1001) {
-    slidesShow = 2;
+    slideShow = 2;
   }
 
   if (getWidth < 700) {
-    slidesShow = 1;
+    slideShow = 1;
   }
 
-  return slidesShow
+  return slideShow
 }
 
 menuHamburguer.addEventListener('click', () => {
@@ -42,13 +42,13 @@ menuHamburguer.addEventListener('click', () => {
 links.forEach(item => {
   item.addEventListener('click', () => {
     nav.classList.toggle('active');
-  });
+  })
 })
 
 window.addEventListener('resize', () => {
-  swiper.params.slidesPerView = handleWitdh();
+  swiper.params.slidesPerView = handleWidth();
   swiper.update();
-});
+})
 
 window.addEventListener('scroll', () => {
   if (window.scrollY >= 200) {
@@ -56,4 +56,5 @@ window.addEventListener('scroll', () => {
   } else {
     header.style.background = 'transparent'
   }
-});
+
+})
